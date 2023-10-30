@@ -1,0 +1,47 @@
+import 'package:flutter/material.dart';
+
+class CategoriaId extends StatelessWidget {
+  final String? url;
+  const CategoriaId(int category_id, {super.key, this.url});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 10, top: 10, right: 10),
+      child: Container(
+          decoration: _createDecoration(),
+          width: double.infinity,
+          height: 400,
+          child: ClipRRect(
+            borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(45), topRight: Radius.circular(45)),
+            child: const Row(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Text(
+                      'categoria\n',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          )),
+    );
+  }
+
+  BoxDecoration _createDecoration() => const BoxDecoration(
+          color: Colors.blueAccent,
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(45), topRight: Radius.circular(45)),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black,
+              offset: Offset(0, 5),
+              blurRadius: 10,
+            )
+          ]);
+}

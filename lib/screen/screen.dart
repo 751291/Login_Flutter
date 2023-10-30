@@ -1,0 +1,11 @@
+export 'package:login/screen/register_user_screen.dart';
+export 'package:login/screen/loading_screen.dart';
+export 'package:login/screen/edit_product_screen.dart';
+export 'package:login/screen/error_screen.dart';
+export 'package:login/screen/list_product_screen.dart';
+export 'package:login/screen/login_screen.dart';
+export 'package:login/screen/boton_screen.dart';
+export 'package:login/screen/edit_categoria_screen.dart';
+export 'package:login/screen/edit_proveedor_screen.dart';
+export 'package:login/screen/list_categorias_screen .dart';
+export 'package:login/screen/list_proveedores_screen .dart';
